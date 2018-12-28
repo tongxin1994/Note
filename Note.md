@@ -11,7 +11,7 @@ ExecStart=/usr/bin/dockerd --graph=/data/docker --storage-driver=overlay --regis
 * --graph=/data/docker 新的存储位置<br>
 * --storage-driver=overlay 当前存储驱动(选填)<br>
 * --registry-mirror 镜像仓库地址(选填)<br>
-##### 2.2 重启docker
+##### 2.2 重启`docker`
 ```shell
 systemctl daemon-reload
 systemctl restart docker
