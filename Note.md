@@ -18,5 +18,14 @@ systemctl daemon-reload
 systemctl restart docker
 ```
 >[参考](https://www.cnblogs.com/bigberg/p/8057807.html "https://www.cnblogs.com/bigberg/p/8057807.html")
+### 3. kubectl expose
+```shell
+kubectl expose (-f FILENAME | TYPE NAME) [--port=port] [--protocol=TCP|UDP] [--target-port=number-or-name] [--name=name] [--external-ip=external-ip-of-service] [--type=type] [-n namespace]
+```
+* --port=port svc监听端口
+* --target-port 容器端口
+* --external-ip 外部ip
+* -n namespace 默认default
+>[参考](https://www.kubernetes.org.cn/2377.html "https://www.kubernetes.org.cn/2377.html")
 
-## 29/12 晴
+
